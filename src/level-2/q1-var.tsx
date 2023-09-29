@@ -1,19 +1,16 @@
-import React from 'react';
 import styled, {css} from "styled-components";
-import arrowImg from './../images/arrow.svg'
 
 type -sc-__a__PropsType = {
-    __a__Type?: 'primary' | 'secondary',
-    arrow?: boolean,
-    disabled?: boolean,
-    children: any,
+    __a__Type?: 'primary' | 'secondary'
+    arrow?: boolean
+    disabled?: boolean
 }
 
 function -sc-__a__(props:XXX) {
     const {children, __a__Type, disabled, arrow} = props;
     return (
         <Styled-sc-__a__ __a__Type={__a__Type} disabled={disabled} >
-            {children}
+            -sc-__b__
             {arrow && <img src={arrowImg} alt={'arrow image'}/>}
         </Styled-sc-__a__>
     );
@@ -36,7 +33,6 @@ const Styled-sc-__a__ = styled.button<XXX>`
   white-space: nowrap;
   box-sizing: border-box;
   
-  
   ${props => props.YYY === 'primary' && css`
     color: #ffffff;
     background-color: #2182d9;
@@ -52,14 +48,9 @@ const Styled-sc-__a__ = styled.button<XXX>`
     }
   `}
   
-  &:disabled {
-    background: #998C00; 
-    color: var(--neutralDark100);
-
-    &:hover {
-      cursor: default;
-    }
-  }
-  
 `
 // Посмотрите внимательно на код. Что должно быть вместо XXX и YYY, чтобы код работал корректно? В ответе укажите значения через пробел: XXX YYY
+//Ответ: -sc-__a__PropsType __a__Type
+
+__a__ - AnyNoun
+__b__ - AnyNoun
